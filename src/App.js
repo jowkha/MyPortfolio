@@ -14,15 +14,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" >
-            < Profile /> 
-          </Route>
-          <Route path="/projects" >
-            < Projects />
-          </Route>
-          <Route path="/experience" >
-            < Experience />
-          </Route>
+          <Route path="/" element={<Profile/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/experience" element={<Experience/>}/>
         </Routes>
       </Router>
     </div>
